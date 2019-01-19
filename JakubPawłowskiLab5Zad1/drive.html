@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Driver simulator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Skrypty strony-->
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <!--Style strony-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Pasek nawigacyjny-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Driver</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Start</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="drive.html">Drive</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+
+
+        <!--Panel symulacji-->
+        <div id="driver">
+            
+
+                <!--Widok kierowcy-->
+                <table id="table" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr>
+                            <td><img class="view-border"  src="Images/tree.png" /></td>
+                            <td><img class="view" id="deer" src="Images/road_sun.png" /></td>
+                            <td><img class="view-border" src="Images/tree.png" /></td>
+                        </tr>
+                        <tr>
+                            <td><img class="view-border" id="border"" src="Images/tree.png" /></td>
+                            <td><img class="view" src="Images/road.png" /></td>
+                            <td><img class="view-border"id="border"" src="Images/tree.png" /></td>
+                        </tr>
+                        <tr>
+                            <td><img class="view-border" id="border"" src="Images/tree.png" /></td>
+                            <td><img class="view" src="Images/road_car.png" /></td>
+                            <td><img class="view-border" id="border"" src="Images/tree.png" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Wskaznik predkosci-->
+                <label id="speed">Speed</label>
+                <br />
+                <!--Gas-->
+                <button type="button" class="btn btn-default btn-lg" onclick="Drive();">Drive </button>
+                <!--Hamulec-->
+                <button type="button" class="btn btn-default btn-lg" onclick="Brake();">Brake</button>
+            
+        </div>
+        <!--Tabela wyników-->
+        <div id="scores">
+            <div class="container" style="text-align: center;">
+                <table id="timesTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Speed [hm/h]</th>
+                            <th>Time to stop</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+        <!--Drive simulation js  file-->
+    </div>
+    <script src="Scripts/drive.js"></script>
+</body>
+</html>

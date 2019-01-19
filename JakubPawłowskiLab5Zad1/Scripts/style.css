@@ -1,0 +1,35 @@
+﻿body{
+    background-color:lightgray;
+}
+#view-table{
+	margin-bottom:10px;
+    margin-top:10px;
+}
+.view {
+	max-height: 150px;
+	width: auto;
+}
+.view-border {
+        background-image: url("../Images/tree.png");
+        max-height: 150px;
+        width:auto;
+}
+#control {
+	float: left;
+}
+#driver {
+	margin-top:50px;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+#scores {
+	width: 50%;
+	float: right;
+	text-align: center;
+}
+#speed {
+    text-align:center;
+	margin-top:20px;
+	margin-bottom:20px;
+}

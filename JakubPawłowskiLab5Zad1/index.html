@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Welcome driver</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Skrypty strony-->
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <!--Style strony-->
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Scripts/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!--Pasek nawigacyjny-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Driver</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" img=""></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="drive.html">Drive</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="education.html">Education</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <!--Nagłówek o programie-->
+    <div class="card-header">
+        <h1>Driver Simulator</h1>
+        <h3>Stop the car if you can</h3>
+    </div>
+    <!--Opis programu-->
+    <div class="container">
+        <div style="float:left;width:50%;">
+            <!--Instrukcja-->
+            <h5 style="margin-top:30px;text-indent:20px;">You are driving with speed 60 km/h. Stop car before incident. You have 100m of a road to stop your car , before the colision with a deer</h5>
+            <dl>
+                <dt>Gas</dt>
+                <dd>Press to start drive.</dd>
+                <dt>Brake</dt>
+                <dd>
+                    Stop the car
+                </dd>
+            </dl>
+            <h5 style="text-indent:20px;">If you succed, try again by press "Gas". Next trial will be harder (+20km/h)</h5>
+            <!--Rady-->
+            <h5>Remember to</h5>
+            <ul>
+                <li>Be focus</li>
+                <li>Look on a road</li>
+                <li>Hand on a brake</li>
+            </ul>
+            <!--Przekierowanie do testu-->
+            <button type="button" class="btn btn-primary btn-lg" onclick="location.href='drive.html'">Drive</button>
+
+        </div>
+        <!--Obrazek dekoracyjny-->
+        <div style="float:right;width:50%;">
+            <img style="max-width:100%;height:auto;" src="Images/deer_img.png" />
+        </div>
+    </div>
+
+
+
+</body>
+</html>
